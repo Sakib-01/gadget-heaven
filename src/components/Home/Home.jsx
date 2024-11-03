@@ -5,7 +5,7 @@ import Products from "../Products/Products";
 
 const Home = () => {
   return (
-    <div>
+    <div className="bg-slate-300">
       <Banner></Banner>
       <BannerImg></BannerImg>
       <Products></Products>
