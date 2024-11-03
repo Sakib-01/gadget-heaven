@@ -1,8 +1,16 @@
 import React from "react";
 
-const Category = ({ category }) => {
+const Category = ({ category, setSelectedCategory }) => {
+  const handleClick = () => {
+    // Call the setSelectedCategory with the lowercase category name
+    setSelectedCategory(category.category_name.toLowerCase());
+  };
+
   return (
-    <div className="border-2 rounded-full p-5 text-center bg-slate-300">
+    <div
+      onClick={handleClick}
+      className="border-2 rounded-full p-5 text-center bg-slate-300 cursor-pointer"
+    >
       <h2>{category.category_name}</h2>
     </div>
   );
