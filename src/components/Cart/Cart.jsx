@@ -21,6 +21,11 @@ const Cart = () => {
     setTotalCost(total);
   }, [carts]);
 
+  const handleSort = () => {
+    const sorted = [...carts].sort((a, b) => b.price - a.price);
+    setCarts(sorted);
+  };
+
   return (
     <div>
       <div className="flex justify-between w-10/12 mx-auto l p-4 border-b border-gray-300">
@@ -30,7 +35,10 @@ const Cart = () => {
           <span className="text-lg font-semibold">${totalCost}</span>
         </div>
 
-        <button className="px-4 py-2 bg-gray-200 text-gray-700 font-semibold rounded-lg">
+        <button
+          onClick={handleSort}
+          className="px-4 py-2 bg-gray-200 text-gray-700 font-semibold rounded-lg"
+        >
           Sort by Price
         </button>
         <button className="px-4 py-2 bg-purple-500 text-white font-semibold rounded-lg">

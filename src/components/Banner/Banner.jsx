@@ -2,8 +2,8 @@ import React from "react";
 
 const Banner = () => {
   return (
-    <div className="hero min-h-[500px] w-11/12 mx-auto bg-purple-950">
-      <div className="hero-content text-center text-white">
+    <div className=" min-h-[650px] lg:mb-[350px] w-11/12 rounded-b-3xl mx-auto bg-purple-950">
+      <div className="flex flex-col justify-center items-center pt-20 text-center text-white">
         <div className="max-w-5xl">
           <h1 className="text-5xl font-bold">
             Upgrade Your Tech Accessorize with Gadget Heaven Accessories

@@ -1,7 +1,19 @@
 import React from "react";
-import { NavLink } from "react-router-dom";
+import { NavLink, useLocation } from "react-router-dom";
+import {
+  favouriteCount,
+  getAllFavourite,
+  wishlistCount,
+} from "../../Utilities/storage";
+import { TiShoppingCart } from "react-icons/ti";
+import { CiHeart } from "react-icons/ci";
 
 const Header = () => {
+  const { pathname } = useLocation();
+  const bgColor =
+    pathname === "/"
+      ? "bg-purple-950 rounded-t-3xl mt-5 text-white"
+      : "bg-white";
   const Link = (
     <>
       <li>
@@ -11,10 +23,14 @@ const Header = () => {
       <li>
         <NavLink to="/dashboard">Dashboard</NavLink>
       </li>
+
+      <li>
+        <NavLink to="/dashboard">Dashboard</NavLink>
+      </li>
     </>
   );
   return (
-    <div className="navbar bg-base-100 w-10/12 mx-auto">
+    <div className={`navbar ${bgColor}  w-11/12 mx-auto`}>
       <div className="navbar-start">
         <div className="dropdown">
           <div tabIndex={0} role="button" className="btn btn-ghost lg:hidden">
@@ -46,7 +62,14 @@ const Header = () => {
         <ul className="menu menu-horizontal px-1">{Link}</ul>
       </div>
       <div className="navbar-end">
-        <a className="btn">Button</a>
+        <NavLink to="/dashboard" className="btn rounded-full mr-2">
+          <TiShoppingCart size={20} />
+          {favouriteCount}
+        </NavLink>
+        <NavLink to="/dashboard/wish" className="btn rounded-full mr-2">
+          <CiHeart size={20} />
+          {wishlistCount}
+        </NavLink>
       </div>
     </div>
   );
