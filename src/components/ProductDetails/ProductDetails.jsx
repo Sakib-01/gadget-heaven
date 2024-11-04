@@ -2,6 +2,12 @@ import React, { useEffect, useState } from "react";
 import { useLoaderData, useParams } from "react-router-dom";
 import { TiShoppingCart } from "react-icons/ti";
 import { CiHeart } from "react-icons/ci";
+import {
+  addFavourite,
+  addWishlist,
+  getAllFavourite,
+  getAllWishlist,
+} from "../../Utilities/storage";
 
 const ProductDetails = () => {
   const data = useLoaderData();
@@ -11,6 +17,8 @@ const ProductDetails = () => {
   useEffect(() => {
     const singleData = data.find((item) => item.product_id == id);
     setProduct(singleData);
+    const favourite = getAllFavourite();
+    const wishlist = getAllWishlist();
   }, [data, id]);
 
   const {
@@ -24,6 +32,13 @@ const ProductDetails = () => {
     availability,
     rating,
   } = product || {};
+
+  const handleAddToCard = (product) => {
+    addFavourite(product);
+  };
+  const handleAddToWishlist = (product) => {
+    addWishlist(product);
+  };
 
   return (
     <div className="hero w-8/12 mx-auto rounded-3xl bg-white relative -top-20 ">
@@ -48,13 +63,19 @@ const ProductDetails = () => {
                 </li>
               ))}
           </ul>
-          <button className="btn btn-primary mr-5">
+          <button
+            className="btn btn-primary mr-5"
+            onClick={() => handleAddToCard(product)}
+          >
             Add to Card{" "}
             <span>
               <TiShoppingCart size={15} />
             </span>
           </button>
-          <button className="btn rounded-full">
+          <button
+            onClick={() => handleAddToWishlist(product)}
+            className="btn rounded-full"
+          >
             <CiHeart size={20} />
           </button>
         </div>
