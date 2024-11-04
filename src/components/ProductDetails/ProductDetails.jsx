@@ -14,11 +14,16 @@ const ProductDetails = () => {
   const { id } = useParams();
   console.log(id);
   const [product, setProduct] = useState({});
+  const [isFavorite, setIsFavorite] = useState(false);
   useEffect(() => {
     const singleData = data.find((item) => item.product_id == id);
     setProduct(singleData);
     const favourite = getAllFavourite();
     const wishlist = getAllWishlist();
+    const isExist = wishlist.find((item) => item.product_id == singleData.id);
+    if (isExist) {
+      setIsFavorite(true);
+    }
   }, [data, id]);
 
   const {
@@ -38,6 +43,7 @@ const ProductDetails = () => {
   };
   const handleAddToWishlist = (product) => {
     addWishlist(product);
+    setIsFavorite(true);
   };
 
   return (
@@ -73,6 +79,7 @@ const ProductDetails = () => {
             </span>
           </button>
           <button
+            disabled={isFavorite}
             onClick={() => handleAddToWishlist(product)}
             className="btn rounded-full"
           >
