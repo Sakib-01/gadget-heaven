@@ -170,23 +170,6 @@
     "rating": 4.5
   },
   {
-    "product_id": "P001",
-    "product_title": "Apple iPhone 15 Pro Max",
-    "product_image": "https://example.com/iphone15promax.jpg",
-    "category": "phones",
-    "price": 1299,
-    "description": "Experience the ultimate smartphone with the iPhone 15 Pro Max.",
-    "specification": [
-      "6.7-inch Super Retina XDR display",
-      "A17 Bionic chip",
-      "Triple-camera system (48MP Main, 12MP Telephoto, 12MP Ultra Wide)",
-      "LiDAR Scanner",
-      "Up to 2TB storage"
-    ],
-    "availability": true,
-    "rating": 4.8
-  },
-  {
     "product_id": "P003",
     "product_title": "Google Pixel 7 Pro",
     "product_image": "https://example.com/pixel7pro.jpg",
@@ -260,13 +243,13 @@
     "product_image": "https://example.com/nikonz6ii.jpg",
     "category": "cameras",
     "price": 1999,
-    "description": "Full-frame mirrorless camera with superb image quality.",
+    "description": "Full-frame mirrorless camera with high-quality image capture.",
     "specification": [
       "24.5MP full-frame sensor",
-      "4K UHD video recording",
-      "Dual processors",
-      "273-point autofocus system",
-      "Compatible with F-mount lenses"
+      "4K UHD video",
+      "Dual EXPEED 6 processors",
+      "273-point hybrid autofocus",
+      "Weather-sealed body"
     ],
     "availability": true,
     "rating": 4.7
@@ -280,10 +263,10 @@
     "description": "Mirrorless camera with excellent photo and video quality.",
     "specification": [
       "26.1MP APS-C sensor",
-      "4K video at 60fps",
+      "4K at 60fps video",
       "In-body stabilization",
       "Film simulation modes",
-      "Weather-sealed body"
+      "Weather-sealed build"
     ],
     "availability": true,
     "rating": 4.8
@@ -298,8 +281,9 @@
     "specification": [
       "13-inch PixelSense touchscreen",
       "Intel Core i5 processor",
-      "8GB RAM, 128GB SSD",
-      "Windows 11",
+      "8GB RAM",
+      "128GB SSD storage",
+      "Windows 11 OS",
       "Pen and keyboard compatible"
     ],
     "availability": true,
@@ -315,9 +299,10 @@
     "specification": [
       "10.1-inch Full HD display",
       "MediaTek processor",
-      "3GB RAM, 32GB storage",
+      "3GB RAM",
+      "32GB storage",
       "Alexa integration",
-      "12-hour battery life"
+      "12 hours battery life"
     ],
     "availability": true,
     "rating": 4.2
@@ -332,9 +317,8 @@
     "specification": [
       "AMOLED display",
       "ECG and stress management",
-      "Sleep tracking",
-      "GPS built-in",
-      "6-day battery life"
+      "Sleep tracking, GPS",
+      "6 days battery life"
     ],
     "availability": true,
     "rating": 4.3
@@ -349,9 +333,9 @@
     "specification": [
       "Sunlight-readable display",
       "VO2 Max and recovery time advisor",
-      "Multi-GNSS support",
-      "Water-resistant up to 50m",
-      "Up to 15 days battery life"
+      "Multi-GNSS GPS support",
+      "Water resistance up to 50m",
+      "15 days battery life"
     ],
     "availability": true,
     "rating": 4.7
