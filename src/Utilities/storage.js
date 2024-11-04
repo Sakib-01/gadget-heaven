@@ -41,10 +41,20 @@ const addWishlist = (product) => {
   localStorage.setItem("wishlist", JSON.stringify(wishlist));
 };
 
+const removeWishlist = (cart) => {
+  console.log(cart);
+  const favorites = getAllWishlist();
+  console.log(favorites);
+  const remaining = favorites.filter((p) => p.product_id !== cart);
+  console.log(remaining);
+  localStorage.setItem("wishlist", JSON.stringify(remaining));
+};
+
 export {
   addFavourite,
   getAllFavourite,
   getAllWishlist,
   addWishlist,
   removeFavorite,
+  removeWishlist,
 };

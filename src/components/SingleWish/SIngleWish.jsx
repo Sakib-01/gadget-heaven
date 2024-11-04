@@ -1,6 +1,7 @@
 import React from "react";
+import { TiDeleteOutline } from "react-icons/ti";
 
-const SIngleWish = ({ wish }) => {
+const SIngleWish = ({ wish, handleRemove }) => {
   return (
     <div className="w-10/12 mx-auto flex items-center justify-between p-4 bg-white shadow-md rounded-lg mb-10">
       <div className="flex items-center space-x-4">
@@ -12,8 +13,11 @@ const SIngleWish = ({ wish }) => {
           <button> add to card</button>
         </div>
       </div>
-      <button className="text-red-500">
-        <h1>cut</h1>
+      <button
+        onClick={() => handleRemove(wish.product_id)}
+        className="text-red-500"
+      >
+        <TiDeleteOutline size={30} />
       </button>
     </div>
   );
