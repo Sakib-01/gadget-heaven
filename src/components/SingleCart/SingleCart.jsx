@@ -13,12 +13,10 @@ const SingleCart = ({ cart, handleRemove }) => {
         </div>
       </div>
       <button
-        onClick={() => handleRemove(cart)}
+        onClick={() => handleRemove(cart.product_id)}
         className="btn  bg-white text-red-500"
       >
-        <h1>
-          <TiDeleteOutline size={30} />
-        </h1>
+        <TiDeleteOutline size={30} />
       </button>
     </div>
   );

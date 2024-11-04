@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from "react";
-import { getAllFavourite } from "../../Utilities/storage";
+import { getAllFavourite, removeFavorite } from "../../Utilities/storage";
 import SingleCart from "../SingleCart/SingleCart";
 
 const Cart = () => {
@@ -10,11 +10,17 @@ const Cart = () => {
     setCarts(favourite);
   }, []);
 
+  const handleRemove = (cart) => {
+    removeFavorite(cart);
+    const favorite = getAllFavourite();
+    setCarts(favorite);
+  };
+
   useEffect(() => {
-    // Calculate total cost whenever carts change
     const total = carts.reduce((price, cart) => price + cart.price, 0);
     setTotalCost(total);
   }, [carts]);
+
   return (
     <div>
       <div className="flex justify-between w-10/12 mx-auto l p-4 border-b border-gray-300">
