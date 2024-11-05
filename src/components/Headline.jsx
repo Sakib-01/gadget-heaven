@@ -1,5 +1,5 @@
 import React from "react";
-import { Link, useLocation } from "react-router-dom";
+import { Link, NavLink, useLocation } from "react-router-dom";
 
 const Headline = ({ title, subtitle }) => {
   const { pathname } = useLocation();
@@ -12,20 +12,30 @@ const Headline = ({ title, subtitle }) => {
         <p className="text-xs md:text-base text-white text-center font-thin">
           {subtitle}
         </p>
-        {(pathname === "/dashboard" || pathname === "/dashboard/wish") && (
+        {(pathname === "/dashboard/cart" ||
+          pathname === "/dashboard/wish" ||
+          pathname === "/dashboard") && (
           <div className="mt-10">
-            <Link
-              to="/dashboard"
-              className="btn btn-outline rounded-full text-white text-base px-5  btn-accent mr-5"
+            <NavLink
+              to="/dashboard/cart"
+              className={({ isActive }) =>
+                `btn  rounded-full text-black bg-violet-600 text-base px-5   mr-5 ${
+                  isActive ? "bg-white text-purple-950" : "hover:text-white"
+                }`
+              }
             >
               card
-            </Link>
-            <Link
+            </NavLink>
+            <NavLink
               to="/dashboard/wish"
-              className="btn btn-outline rounded-full text-white text-base px-5  btn-accent"
+              className={({ isActive }) =>
+                `btn  rounded-full text-black bg-violet-600 text-base px-5   mr-5 ${
+                  isActive ? "bg-white text-purple-950" : "hover:text-white"
+                }`
+              }
             >
               wish
-            </Link>
+            </NavLink>
           </div>
         )}
       </div>

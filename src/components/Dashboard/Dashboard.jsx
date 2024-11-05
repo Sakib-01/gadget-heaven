@@ -1,6 +1,7 @@
 import React from "react";
 import Headline from "../Headline";
 import { Outlet } from "react-router-dom";
+import Cart from "../Cart/Cart";
 
 const Dashboard = () => {
   return (

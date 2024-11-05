@@ -16,11 +16,11 @@ const Header = () => {
       : "bg-white";
   const Link = (
     <>
-      <li>
+      <li className="mr-5">
         <NavLink to="/">Home</NavLink>
       </li>
 
-      <li>
+      <li className="mr-5">
         <NavLink to="/dashboard">Dashboard</NavLink>
       </li>
 
@@ -56,7 +56,7 @@ const Header = () => {
             {Link}
           </ul>
         </div>
-        <a className="btn btn-ghost text-xl">daisyUI</a>
+        <a className="btn btn-ghost text-xl">Gadget Heaven</a>
       </div>
       <div className="navbar-center hidden lg:flex">
         <ul className="menu menu-horizontal px-1">{Link}</ul>

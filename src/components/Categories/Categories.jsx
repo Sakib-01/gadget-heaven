@@ -1,7 +1,8 @@
-import React from "react";
+import React, { useState } from "react";
 import Category from "../Product/Category/Category";
 
 const Categories = ({ categories, setSelectedCategory }) => {
+  const [selected, setSelected] = useState({});
   return (
     <div className="col-span-1 bg-white p-5">
       <div className="grid grid-cols-3 lg:grid-cols-1 gap-5 mb-10">
@@ -10,6 +11,8 @@ const Categories = ({ categories, setSelectedCategory }) => {
             setSelectedCategory={setSelectedCategory}
             key={category.category_id}
             category={category}
+            selected={selected}
+            setSelected={setSelected}
           />
         ))}
       </div>
