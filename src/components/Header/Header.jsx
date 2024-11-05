@@ -29,6 +29,7 @@ const Header = () => {
       </li>
     </>
   );
+
   return (
     <div className={`navbar ${bgColor}  w-11/12 mx-auto`}>
       <div className="navbar-start">

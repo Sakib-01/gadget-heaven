@@ -12,11 +12,13 @@ import ShowProduct from "./components/ShowProduct/ShowProduct.jsx";
 import Dashboard from "./components/Dashboard/Dashboard.jsx";
 import Cart from "./components/Cart/Cart.jsx";
 import Wish from "./components/Wish/Wish.jsx";
+import ErrorPage from "./components/ErrorPage/ErrorPage.jsx";
 
 const router = createBrowserRouter([
   {
     path: "/",
     element: <Root></Root>,
+    errorElement: <ErrorPage></ErrorPage>,
     children: [
       {
         path: "/",

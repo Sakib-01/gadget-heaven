@@ -1,6 +1,3 @@
-
-
-
 const getAllFavourite = () => {
   const all = localStorage.getItem("favourite");
 
@@ -25,6 +22,10 @@ const removeFavorite = (cart) => {
   const remaining = favorites.filter((p) => p.product_id !== cart);
   console.log(remaining);
   localStorage.setItem("favourite", JSON.stringify(remaining));
+};
+
+const clearAllFavourites = () => {
+  localStorage.removeItem("favourite");
 };
 
 const favouriteCount = getAllFavourite().length;
@@ -64,6 +65,7 @@ export {
   addWishlist,
   removeFavorite,
   removeWishlist,
+  clearAllFavourites,
   favouriteCount,
   wishlistCount,
 };

@@ -6,6 +6,10 @@ import { CiHeart } from "react-icons/ci";
 import { ToastContainer, toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
 
+// import ReactStars from "react-rating-stars-component";
+
+import ReactStars from "react-rating-stars-component";
+
 import {
   addFavourite,
   addWishlist,
@@ -54,16 +58,16 @@ const ProductDetails = () => {
     <div className="hero w-8/12 mx-auto rounded-3xl bg-white relative -top-20 ">
       <div className="hero-content flex-col lg:flex-row ">
         <img
-          src={
-            product_image ||
-            "https://img.daisyui.com/images/stock/photo-1635805737707-575885ab0820.webp"
-          }
+          src={product_image}
           alt={product_title || "Product Image"}
           className="max-w-sm rounded-lg shadow-2xl"
         />
         <div className="space-y-5 py-10">
           <h1 className="text-5xl font-bold">{product_title}</h1>
-          <p className="py-6">{price}</p>
+          <p className=" rounded-full bg-green-300 text-green-700 w-20 text-center border-2">
+            {availability}
+          </p>
+          <p className="py-6"> Price: ${price}</p>
           <p>{description}</p>
           <ul className="text-lg ml-12">
             {specification &&
@@ -73,7 +77,15 @@ const ProductDetails = () => {
                 </li>
               ))}
           </ul>
-
+          <p> Rating : {rating}</p>
+          <ReactStars
+            count={5}
+            value={rating}
+            size={24}
+            activeColor="#ffd700"
+            isHalf={true}
+            edit={false}
+          />
           <button
             className="btn btn-primary mr-5"
             onClick={() => {

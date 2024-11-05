@@ -1,5 +1,10 @@
 import React, { useEffect, useState } from "react";
-import { getAllFavourite, removeFavorite } from "../../Utilities/storage";
+import image from "../../assets/Group.png";
+import {
+  clearAllFavourites,
+  getAllFavourite,
+  removeFavorite,
+} from "../../Utilities/storage";
 import SingleCart from "../SingleCart/SingleCart";
 
 const Cart = () => {
@@ -26,6 +31,16 @@ const Cart = () => {
     setCarts(sorted);
   };
 
+  const [showModal, setShowModal] = useState(false);
+  const handlePurchase = () => {
+    setShowModal(true);
+    clearAllFavourites();
+  };
+
+  const closeModal = () => {
+    setShowModal(false);
+  };
+
   return (
     <div>
       <div className="flex justify-between w-10/12 mx-auto l p-4 border-b border-gray-300">
@@ -41,7 +56,10 @@ const Cart = () => {
         >
           Sort by Price
         </button>
-        <button className="px-4 py-2 bg-purple-500 text-white font-semibold rounded-lg">
+        <button
+          onClick={handlePurchase}
+          className="px-4 py-2 bg-purple-500 text-white font-semibold rounded-lg"
+        >
           Purchase
         </button>
       </div>
@@ -52,6 +70,25 @@ const Cart = () => {
           handleRemove={handleRemove}
         ></SingleCart>
       ))}
+
+      {showModal && (
+        <div className="fixed inset-0 flex items-center justify-center bg-black bg-opacity-50">
+          <div className="bg-white p-6 rounded-lg shadow-lg text-center">
+            <div className="flex justify-center items-center mb-2">
+              <img className="w-20 " src={image} alt="" />
+            </div>
+            <h2 className="text-2xl font-bold mb-4">Congratulations!</h2>
+            <p className="mb-4">Your purchase is successful.</p>
+            <p className="mb-4">Total Cost: ${totalCost}</p>
+            <button
+              onClick={closeModal}
+              className="px-4 py-2 bg-purple-500 text-white font-semibold rounded-lg"
+            >
+              Close
+            </button>
+          </div>
+        </div>
+      )}
     </div>
   );
 };

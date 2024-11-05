@@ -13,8 +13,8 @@
       "LiDAR Scanner",
       "Up to 2TB storage"
     ],
-    "availability": true,
-    "rating": 4.8
+    "availability": "In Stock",
+    "rating": 5
   },
   {
     "product_id": "P002",
@@ -30,8 +30,8 @@
       "5,000mAh battery",
       "Up to 1TB storage"
     ],
-    "availability": true,
-    "rating": 4.7
+    "availability": "In Stock",
+    "rating": 4
   },
   {
     "product_id": "L001",
@@ -47,8 +47,8 @@
       "Up to 22 hours battery life",
       "Backlit Magic Keyboard"
     ],
-    "availability": true,
-    "rating": 4.9
+    "availability": "In Stock",
+    "rating": 5
   },
   {
     "product_id": "L002",
@@ -64,8 +64,8 @@
       "Up to 12 hours battery life",
       "Backlit keyboard"
     ],
-    "availability": true,
-    "rating": 4.6
+    "availability": "In Stock",
+    "rating": 4
   },
   {
     "product_id": "C001",
@@ -81,8 +81,8 @@
       "Dual Pixel autofocus",
       "Dual card slots"
     ],
-    "availability": true,
-    "rating": 4.9
+    "availability": "In Stock",
+    "rating": 5
   },
   {
     "product_id": "C002",
@@ -98,8 +98,8 @@
       "Real-time Eye AF",
       "USB-C charging"
     ],
-    "availability": true,
-    "rating": 4.8
+    "availability": "In Stock",
+    "rating": 5
   },
   {
     "product_id": "T001",
@@ -115,8 +115,8 @@
       "Face ID",
       "Apple Pencil support"
     ],
-    "availability": true,
-    "rating": 4.9
+    "availability": "In Stock",
+    "rating": 5
   },
   {
     "product_id": "T002",
@@ -132,8 +132,8 @@
       "S Pen included",
       "12MP ultra-wide front camera"
     ],
-    "availability": true,
-    "rating": 4.7
+    "availability": "In Stock",
+    "rating": 4
   },
   {
     "product_id": "W001",
@@ -149,8 +149,8 @@
       "Fall detection",
       "Swimproof design"
     ],
-    "availability": true,
-    "rating": 4.8
+    "availability": "In Stock",
+    "rating": 5
   },
   {
     "product_id": "W002",
@@ -166,8 +166,8 @@
       "GPS built-in",
       "Up to 3 days battery life"
     ],
-    "availability": true,
-    "rating": 4.5
+    "availability": "In Stock",
+    "rating": 3
   },
   {
     "product_id": "P003",
@@ -183,8 +183,8 @@
       "Face Unlock and Fingerprint Sensor",
       "Up to 512GB storage"
     ],
-    "availability": true,
-    "rating": 4.6
+    "availability": "In Stock",
+    "rating": 4
   },
   {
     "product_id": "P004",
@@ -200,8 +200,8 @@
       "5,000mAh battery with fast charging",
       "Up to 256GB storage"
     ],
-    "availability": true,
-    "rating": 4.5
+    "availability": "In Stock",
+    "rating": 3
   },
   {
     "product_id": "L003",
@@ -217,8 +217,8 @@
       "360-degree hinge for tablet mode",
       "Fingerprint reader"
     ],
-    "availability": true,
-    "rating": 4.7
+    "availability": "In Stock",
+    "rating": 4
   },
   {
     "product_id": "L004",
@@ -234,8 +234,8 @@
       "Carbon fiber construction",
       "Dolby Atmos speaker system"
     ],
-    "availability": true,
-    "rating": 4.8
+    "availability": "In Stock",
+    "rating": 5
   },
   {
     "product_id": "C003",
@@ -251,8 +251,8 @@
       "273-point hybrid autofocus",
       "Weather-sealed body"
     ],
-    "availability": true,
-    "rating": 4.7
+    "availability": "In Stock",
+    "rating": 4
   },
   {
     "product_id": "C004",
@@ -268,8 +268,8 @@
       "Film simulation modes",
       "Weather-sealed build"
     ],
-    "availability": true,
-    "rating": 4.8
+    "availability": "In Stock",
+    "rating": 5
   },
   {
     "product_id": "T003",
@@ -286,8 +286,8 @@
       "Windows 11 OS",
       "Pen and keyboard compatible"
     ],
-    "availability": true,
-    "rating": 4.6
+    "availability": "In Stock",
+    "rating": 4
   },
   {
     "product_id": "T004",
@@ -304,8 +304,8 @@
       "Alexa integration",
       "12 hours battery life"
     ],
-    "availability": true,
-    "rating": 4.2
+    "availability": "In Stock",
+    "rating": 5
   },
   {
     "product_id": "W003",
@@ -320,8 +320,8 @@
       "Sleep tracking, GPS",
       "6 days battery life"
     ],
-    "availability": true,
-    "rating": 4.3
+    "availability": "In Stock",
+    "rating": 3
   },
   {
     "product_id": "W004",
@@ -337,7 +337,7 @@
       "Water resistance up to 50m",
       "15 days battery life"
     ],
-    "availability": true,
-    "rating": 4.7
+    "availability": "In Stock",
+    "rating": 4
   }
 ]
