@@ -2,6 +2,10 @@ import React, { useEffect, useState } from "react";
 import { useLoaderData, useParams } from "react-router-dom";
 import { TiShoppingCart } from "react-icons/ti";
 import { CiHeart } from "react-icons/ci";
+
+import { ToastContainer, toast } from "react-toastify";
+import "react-toastify/dist/ReactToastify.css";
+
 import {
   addFavourite,
   addWishlist,
@@ -20,7 +24,7 @@ const ProductDetails = () => {
     setProduct(singleData);
     const favourite = getAllFavourite();
     const wishlist = getAllWishlist();
-    const isExist = wishlist.find((item) => item.product_id == singleData.id);
+    const isExist = wishlist.find((item) => item.product_id == id);
     if (isExist) {
       setIsFavorite(true);
     }
@@ -69,9 +73,13 @@ const ProductDetails = () => {
                 </li>
               ))}
           </ul>
+
           <button
             className="btn btn-primary mr-5"
-            onClick={() => handleAddToCard(product)}
+            onClick={() => {
+              handleAddToCard(product);
+              toast.success(`${product.product_title} has been added Cart!`);
+            }}
           >
             Add to Card{" "}
             <span>
@@ -80,11 +88,17 @@ const ProductDetails = () => {
           </button>
           <button
             disabled={isFavorite}
-            onClick={() => handleAddToWishlist(product)}
+            onClick={() => {
+              handleAddToWishlist(product);
+              toast.success(
+                `${product.product_title} has been added Wishlist!`
+              );
+            }}
             className="btn rounded-full"
           >
             <CiHeart size={20} />
           </button>
+          <ToastContainer />
         </div>
       </div>
     </div>

@@ -2,7 +2,6 @@ import React from "react";
 
 const Category = ({ category, setSelectedCategory }) => {
   const handleClick = () => {
-    // Call the setSelectedCategory with the lowercase category name
     setSelectedCategory(category.category_name.toLowerCase());
   };
 

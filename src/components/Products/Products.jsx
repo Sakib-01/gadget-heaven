@@ -5,7 +5,7 @@ import Cards from "../Cards/Cards";
 const Products = () => {
   const [categories, setCategories] = useState([]);
   const [products, setProducts] = useState([]);
-  const [selectedCategory, setSelectedCategory] = useState(null);
+  const [selectedCategory, setSelectedCategory] = useState("all products");
 
   useEffect(() => {
     fetch("/public/categories.json")
@@ -19,9 +19,14 @@ const Products = () => {
       .then((data) => setProducts(data));
   }, []);
 
-  const filteredProducts = selectedCategory
-    ? products.filter((product) => product.category === selectedCategory)
-    : products;
+  // const filteredProducts = selectedCategory
+  //   ? products.filter((product) => product.category === selectedCategory)
+  //   : products;
+
+  const filteredProducts =
+    selectedCategory === "all products"
+      ? products
+      : products.filter((product) => product.category === selectedCategory);
 
   return (
     <div>

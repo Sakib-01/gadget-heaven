@@ -1,6 +1,9 @@
 import React, { useEffect, useState } from "react";
 import { TiDeleteOutline } from "react-icons/ti";
 
+import { toast } from "react-toastify";
+import "react-toastify/dist/ReactToastify.css";
+
 const SingleCart = ({ cart, handleRemove }) => {
   return (
     <div className="w-10/12 mx-auto flex items-center justify-between p-4 bg-white shadow-md rounded-lg mb-10">
@@ -15,7 +18,10 @@ const SingleCart = ({ cart, handleRemove }) => {
         </div>
       </div>
       <button
-        onClick={() => handleRemove(cart.product_id)}
+        onClick={() => {
+          handleRemove(cart.product_id);
+          toast.success(`${cart.product_title} has been removed Cart!`);
+        }}
         className="btn  bg-white text-red-500"
       >
         <TiDeleteOutline size={30} />

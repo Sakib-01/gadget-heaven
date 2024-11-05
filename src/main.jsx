@@ -13,6 +13,8 @@ import Dashboard from "./components/Dashboard/Dashboard.jsx";
 import Cart from "./components/Cart/Cart.jsx";
 import Wish from "./components/Wish/Wish.jsx";
 
+
+
 const router = createBrowserRouter([
   {
     path: "/",
@@ -60,5 +62,6 @@ const router = createBrowserRouter([
 createRoot(document.getElementById("root")).render(
   <StrictMode>
     <RouterProvider router={router} />
+    
   </StrictMode>
 );

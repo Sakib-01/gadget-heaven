@@ -2,6 +2,9 @@ import React from "react";
 import { TiDeleteOutline } from "react-icons/ti";
 import { addFavourite } from "../../Utilities/storage";
 
+import { toast } from "react-toastify";
+import "react-toastify/dist/ReactToastify.css";
+
 const SIngleWish = ({ wish, handleRemove }) => {
   const handleAddToCard = (wish) => {
     addFavourite(wish);
@@ -25,8 +28,12 @@ const SIngleWish = ({ wish, handleRemove }) => {
           </button>
         </div>
       </div>
+
       <button
-        onClick={() => handleRemove(wish.product_id)}
+        onClick={() => {
+          handleRemove(wish.product_id);
+          toast.success(`${wish.product_title} has been removed Wishlist!`);
+        }}
         className="text-red-500"
       >
         <TiDeleteOutline size={30} />
