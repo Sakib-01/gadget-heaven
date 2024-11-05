@@ -1,9 +1,12 @@
-import React from "react";
+import React, { useEffect } from "react";
 import Headline from "../Headline";
 import { Outlet } from "react-router-dom";
 import Cart from "../Cart/Cart";
 
 const Dashboard = () => {
+  useEffect(() => {
+    document.title = "Dashboard | Gadget Heaven";
+  }, []);
   return (
     <div>
       <Headline
