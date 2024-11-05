@@ -9,7 +9,9 @@ const SIngleWish = ({ wish, handleRemove }) => {
   return (
     <div className="w-10/12 mx-auto flex items-center justify-between p-4 bg-white shadow-md rounded-lg mb-10">
       <div className="flex items-center space-x-4">
-        <div className="w-16 h-16 bg-gray-300 rounded-lg"></div>
+        <div className="w-16 h-16  rounded-lg">
+          <img src={wish.product_image} alt="" />
+        </div>
         <div>
           <h3 className="text-lg font-semibold">{wish.product_title}</h3>
           <p className="text-sm text-gray-500">{wish.description}</p>

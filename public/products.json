@@ -2,7 +2,7 @@
   {
     "product_id": "P001",
     "product_title": "Apple iPhone 15 Pro Max",
-    "product_image": "https://example.com/iphone15promax.jpg",
+    "product_image": "https://i.ibb.co.com/VmC14sB/i-Phone-15.jpg",
     "category": "phones",
     "price": 1299,
     "description": "Experience the ultimate smartphone with the iPhone 15 Pro Max.",
@@ -19,7 +19,7 @@
   {
     "product_id": "P002",
     "product_title": "Samsung Galaxy S23 Ultra",
-    "product_image": "https://example.com/galaxys23ultra.jpg",
+    "product_image": "https://i.ibb.co.com/TMQdDDY/Galaxy-S23-Ultra.jpg",
     "category": "phones",
     "price": 1199,
     "description": "Powerful smartphone with advanced camera capabilities.",
@@ -36,7 +36,7 @@
   {
     "product_id": "L001",
     "product_title": "Apple MacBook Pro 16\" M2",
-    "product_image": "https://example.com/macbookpro16.jpg",
+    "product_image": "https://i.ibb.co.com/XW3yW9K/macbook-pro.jpg",
     "category": "laptops",
     "price": 2499,
     "description": "High-performance laptop with M2 chip for creators.",
@@ -53,7 +53,7 @@
   {
     "product_id": "L002",
     "product_title": "Dell XPS 13",
-    "product_image": "https://example.com/dellxps13.jpg",
+    "product_image": "https://i.ibb.co.com/z2X78zB/notebook-xps-13.jpg",
     "category": "laptops",
     "price": 999,
     "description": "Ultra-thin and powerful laptop with InfinityEdge display.",
@@ -70,7 +70,7 @@
   {
     "product_id": "C001",
     "product_title": "Canon EOS R5",
-    "product_image": "https://example.com/canoneosr5.jpg",
+    "product_image": "https://i.ibb.co.com/5jPZ3GJ/canon-eos-r5.jpg",
     "category": "cameras",
     "price": 3899,
     "description": "Professional mirrorless camera with high-resolution sensor.",
@@ -87,7 +87,7 @@
   {
     "product_id": "C002",
     "product_title": "Sony Alpha a7 IV",
-    "product_image": "https://example.com/sonya7iv.jpg",
+    "product_image": "https://i.ibb.co.com/jvtH5xd/Sony-Alpha-7.jpg",
     "category": "cameras",
     "price": 2499,
     "description": "Versatile mirrorless camera for both photos and videos.",
@@ -104,7 +104,7 @@
   {
     "product_id": "T001",
     "product_title": "Apple iPad Pro 12.9\"",
-    "product_image": "https://example.com/ipadpro12.jpg",
+    "product_image": "https://i.ibb.co.com/HtNtdWN/Apple-ipad.jpg",
     "category": "tablets",
     "price": 1099,
     "description": "Powerful tablet with M2 chip for professional use.",
@@ -121,7 +121,7 @@
   {
     "product_id": "T002",
     "product_title": "Samsung Galaxy Tab S8 Ultra",
-    "product_image": "https://example.com/galaxytabs8ultra.jpg",
+    "product_image": "https://i.ibb.co.com/TvNcVP5/samsung-tab.jpg",
     "category": "tablets",
     "price": 1199,
     "description": "High-end tablet with a large AMOLED screen.",
@@ -138,7 +138,7 @@
   {
     "product_id": "W001",
     "product_title": "Apple Watch Series 9",
-    "product_image": "https://example.com/applewatch9.jpg",
+    "product_image": "https://i.ibb.co.com/5xWLXG2/Apple-watch.jpg",
     "category": "watches",
     "price": 399,
     "description": "Smartwatch with advanced health tracking features.",
@@ -155,7 +155,7 @@
   {
     "product_id": "W002",
     "product_title": "Samsung Galaxy Watch 6",
-    "product_image": "https://example.com/galaxywatch6.jpg",
+    "product_image": "https://i.ibb.co.com/ZHJ7XPm/Galaxy-Watch6-Gold-5232.jpg",
     "category": "watches",
     "price": 299,
     "description": "Fitness-focused smartwatch with a sleek design.",
@@ -172,7 +172,7 @@
   {
     "product_id": "P003",
     "product_title": "Google Pixel 7 Pro",
-    "product_image": "https://example.com/pixel7pro.jpg",
+    "product_image": "https://i.ibb.co.com/KyP3Lth/google-pixel.png",
     "category": "phones",
     "price": 899,
     "description": "Advanced AI-powered smartphone with Pixel-exclusive features.",
@@ -189,7 +189,7 @@
   {
     "product_id": "P004",
     "product_title": "OnePlus 11",
-    "product_image": "https://example.com/oneplus11.jpg",
+    "product_image": "https://i.ibb.co.com/SBKTJtz/One-Plus-11-3-4957.jpg",
     "category": "phones",
     "price": 699,
     "description": "Flagship killer with premium features and design.",
@@ -206,7 +206,7 @@
   {
     "product_id": "L003",
     "product_title": "HP Spectre x360 14",
-    "product_image": "https://example.com/hpspectrex360.jpg",
+    "product_image": "https://i.ibb.co.com/jZzqFQV/HP-Spectre.jpg",
     "category": "laptops",
     "price": 1199,
     "description": "Versatile 2-in-1 laptop with a stunning OLED display.",
@@ -223,7 +223,7 @@
   {
     "product_id": "L004",
     "product_title": "Lenovo ThinkPad X1 Carbon Gen 10",
-    "product_image": "https://example.com/thinkpadx1carbon.jpg",
+    "product_image": "https://i.ibb.co.com/YLjJrK9/Think-Pad-X1-Carbon-in-BD-5.webp",
     "category": "laptops",
     "price": 1399,
     "description": "Business laptop with legendary ThinkPad durability and performance.",
@@ -240,7 +240,7 @@
   {
     "product_id": "C003",
     "product_title": "Nikon Z6 II",
-    "product_image": "https://example.com/nikonz6ii.jpg",
+    "product_image": "https://i.ibb.co.com/f2FWpWf/z6-ii-01-500x500.webp",
     "category": "cameras",
     "price": 1999,
     "description": "Full-frame mirrorless camera with high-quality image capture.",
@@ -257,7 +257,7 @@
   {
     "product_id": "C004",
     "product_title": "Fujifilm X-T4",
-    "product_image": "https://example.com/fujifilmt4.jpg",
+    "product_image": "https://i.ibb.co.com/7bLKQ4k/x-t4-01-500x500.webp",
     "category": "cameras",
     "price": 1699,
     "description": "Mirrorless camera with excellent photo and video quality.",
@@ -274,7 +274,7 @@
   {
     "product_id": "T003",
     "product_title": "Microsoft Surface Pro 9",
-    "product_image": "https://example.com/surfacepro9.jpg",
+    "product_image": "https://i.ibb.co.com/YbXBF1t/Microsoft-Surface-Pro-9.webp",
     "category": "tablets",
     "price": 999,
     "description": "High-performance tablet that works as a laptop with the keyboard.",
@@ -292,7 +292,7 @@
   {
     "product_id": "T004",
     "product_title": "Amazon Fire HD 10",
-    "product_image": "https://example.com/firehd10.jpg",
+    "product_image": "https://i.ibb.co.com/nDVbQxM/Amazon-fire.jpg",
     "category": "tablets",
     "price": 149,
     "description": "Affordable tablet for media consumption and light productivity.",
@@ -310,7 +310,7 @@
   {
     "product_id": "W003",
     "product_title": "Fitbit Sense 2",
-    "product_image": "https://example.com/fitbitsense2.jpg",
+    "product_image": "https://i.ibb.co.com/RvdD9Vx/Fitbit-Sense-2.jpg",
     "category": "watches",
     "price": 299,
     "description": "Smartwatch with advanced health and fitness tracking.",
@@ -326,7 +326,7 @@
   {
     "product_id": "W004",
     "product_title": "Garmin Forerunner 955",
-    "product_image": "https://example.com/garminforerunner955.jpg",
+    "product_image": "https://i.ibb.co.com/jT1QmcW/forerunner.webp",
     "category": "watches",
     "price": 499,
     "description": "GPS smartwatch for serious athletes with endurance tracking.",
