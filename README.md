@@ -10,7 +10,7 @@ Currently, two official plugins are available:
 # 🌟 Gadget Heaven 🌟
 
 **Live Website:** [Attach Live Website Link Here]  
-**Requirement Document:** [Download Requirements Document](/Batch-10_Assignment-08.pdf)
+**Requirement Document:** [Download Requirements Document](./Batch-10_Assignment-08.pdf)
 
 ---
 
