@@ -9,7 +9,7 @@ Currently, two official plugins are available:
 
 # 🌟 Gadget Heaven 🌟
 
-**Live Website:** [Attach Live Website Link Here]  
+**Live Website:** [\[Attach Live Website Link Here\] ](https://capable-belekoy-ec48ff.netlify.app/)
 **Requirement Document:** [Download Requirements Document](./public/Batch-10_Assignment-08.pdf)
 
 ---
