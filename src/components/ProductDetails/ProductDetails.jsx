@@ -3,12 +3,11 @@ import { useLoaderData, useParams } from "react-router-dom";
 import { TiShoppingCart } from "react-icons/ti";
 import { CiHeart } from "react-icons/ci";
 
+import Rating from "react-rating";
+import { FaStar, FaRegStarHalf, FaRegStar } from "react-icons/fa";
+
 import { ToastContainer, toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
-
-// import ReactStars from "react-rating-stars-component";
-
-import ReactStars from "react-rating-stars-component";
 
 import {
   addFavourite,
@@ -78,14 +77,15 @@ const ProductDetails = () => {
               ))}
           </ul>
           <p> Rating : {rating}</p>
-          <ReactStars
-            count={5}
-            value={rating}
-            size={24}
-            activeColor="#ffd700"
-            isHalf={true}
-            edit={false}
-          />
+          <Rating
+            initialRating={rating || 0}
+            readonly
+            emptySymbol={<FaRegStar size={24} color="#ddd" />}
+            fullSymbol={<FaStar size={24} color="#ffd700" />}
+            halfSymbol={<FaRegStarHalf size={24} color="#ffd700" />}
+            fractions={2}
+          />{" "}
+          <br />
           <button
             className="btn btn-primary mr-5"
             onClick={() => {
