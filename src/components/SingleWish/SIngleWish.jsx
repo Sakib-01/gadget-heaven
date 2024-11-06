@@ -21,7 +21,10 @@ const SIngleWish = ({ wish, handleRemove }) => {
           <p className="text-lg font-semibold">Price: ${wish.price}</p>
           <button
             className="btn btn-primary"
-            onClick={() => handleAddToCard(wish)}
+            onClick={() => {
+              handleAddToCard(wish),
+                toast.success(`${wish.product_title} has been added Cart!`);
+            }}
           >
             {" "}
             add to card

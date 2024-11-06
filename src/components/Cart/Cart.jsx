@@ -45,23 +45,25 @@ const Cart = () => {
     <div>
       <div className="flex justify-between w-10/12 mx-auto l p-4 border-b border-gray-300">
         <h2 className="text-xl font-semibold">Cart</h2>
-        <div className="text-right">
-          <span className="text-lg font-semibold">Total cost:</span>
-          <span className="text-lg font-semibold">${totalCost}</span>
-        </div>
+        <div className="flex gap-5 items-center">
+          <div className="text-right">
+            <span className="text-lg font-semibold">Total cost:</span>
+            <span className="text-lg font-semibold">${totalCost}</span>
+          </div>
 
-        <button
-          onClick={handleSort}
-          className="px-4 py-2 bg-gray-200 text-gray-700 font-semibold rounded-lg"
-        >
-          Sort by Price
-        </button>
-        <button
-          onClick={handlePurchase}
-          className="px-4 py-2 bg-purple-500 text-white font-semibold rounded-lg"
-        >
-          Purchase
-        </button>
+          <button
+            onClick={handleSort}
+            className="px-4 py-2 bg-gray-200 text-gray-700 font-semibold rounded-lg"
+          >
+            Sort by Price
+          </button>
+          <button
+            onClick={handlePurchase}
+            className="px-4 py-2 bg-purple-500 text-white font-semibold rounded-lg"
+          >
+            Purchase
+          </button>
+        </div>
       </div>
       {carts.map((cart, idx) => (
         <SingleCart

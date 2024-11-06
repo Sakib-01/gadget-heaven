@@ -63,8 +63,14 @@ const ProductDetails = () => {
         />
         <div className="space-y-5 py-10">
           <h1 className="text-5xl font-bold">{product_title}</h1>
-          <p className=" rounded-full bg-green-300 text-green-700 w-20 text-center border-2">
-            {availability}
+          <p
+            className={` rounded-full ${
+              availability
+                ? "bg-green-300 text-green-700"
+                : "bg-red-300 text-red-700"
+            } w-20 text-center border-2`}
+          >
+            {availability ? "In Stock" : "Stockout"}
           </p>
           <p className="py-6"> Price: ${price}</p>
           <p>{description}</p>

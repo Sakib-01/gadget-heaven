@@ -13,7 +13,7 @@
       "LiDAR Scanner",
       "Up to 2TB storage"
     ],
-    "availability": "In Stock",
+    "availability": true,
     "rating": 5
   },
   {
@@ -30,7 +30,7 @@
       "5,000mAh battery",
       "Up to 1TB storage"
     ],
-    "availability": "In Stock",
+    "availability": false,
     "rating": 4
   },
   {
@@ -47,7 +47,7 @@
       "Up to 22 hours battery life",
       "Backlit Magic Keyboard"
     ],
-    "availability": "In Stock",
+    "availability": true,
     "rating": 5
   },
   {
@@ -64,7 +64,7 @@
       "Up to 12 hours battery life",
       "Backlit keyboard"
     ],
-    "availability": "In Stock",
+    "availability": true,
     "rating": 4
   },
   {
@@ -81,7 +81,7 @@
       "Dual Pixel autofocus",
       "Dual card slots"
     ],
-    "availability": "In Stock",
+    "availability": true,
     "rating": 5
   },
   {
@@ -98,7 +98,7 @@
       "Real-time Eye AF",
       "USB-C charging"
     ],
-    "availability": "In Stock",
+    "availability": true,
     "rating": 5
   },
   {
@@ -115,7 +115,7 @@
       "Face ID",
       "Apple Pencil support"
     ],
-    "availability": "In Stock",
+    "availability": true,
     "rating": 5
   },
   {
@@ -132,7 +132,7 @@
       "S Pen included",
       "12MP ultra-wide front camera"
     ],
-    "availability": "In Stock",
+    "availability": true,
     "rating": 4
   },
   {
@@ -149,7 +149,7 @@
       "Fall detection",
       "Swimproof design"
     ],
-    "availability": "In Stock",
+    "availability": true,
     "rating": 5
   },
   {
@@ -166,7 +166,7 @@
       "GPS built-in",
       "Up to 3 days battery life"
     ],
-    "availability": "In Stock",
+    "availability": true,
     "rating": 3
   },
   {
@@ -183,7 +183,7 @@
       "Face Unlock and Fingerprint Sensor",
       "Up to 512GB storage"
     ],
-    "availability": "In Stock",
+    "availability": true,
     "rating": 4
   },
   {
@@ -200,7 +200,7 @@
       "5,000mAh battery with fast charging",
       "Up to 256GB storage"
     ],
-    "availability": "In Stock",
+    "availability": true,
     "rating": 3
   },
   {
@@ -217,7 +217,7 @@
       "360-degree hinge for tablet mode",
       "Fingerprint reader"
     ],
-    "availability": "In Stock",
+    "availability": true,
     "rating": 4
   },
   {
@@ -234,7 +234,7 @@
       "Carbon fiber construction",
       "Dolby Atmos speaker system"
     ],
-    "availability": "In Stock",
+    "availability": true,
     "rating": 5
   },
   {
@@ -251,7 +251,7 @@
       "273-point hybrid autofocus",
       "Weather-sealed body"
     ],
-    "availability": "In Stock",
+    "availability": true,
     "rating": 4
   },
   {
@@ -268,7 +268,7 @@
       "Film simulation modes",
       "Weather-sealed build"
     ],
-    "availability": "In Stock",
+    "availability": true,
     "rating": 5
   },
   {
@@ -286,7 +286,7 @@
       "Windows 11 OS",
       "Pen and keyboard compatible"
     ],
-    "availability": "In Stock",
+    "availability": true,
     "rating": 4
   },
   {
@@ -304,7 +304,7 @@
       "Alexa integration",
       "12 hours battery life"
     ],
-    "availability": "In Stock",
+    "availability": true,
     "rating": 5
   },
   {
@@ -320,7 +320,7 @@
       "Sleep tracking, GPS",
       "6 days battery life"
     ],
-    "availability": "In Stock",
+    "availability": true,
     "rating": 3
   },
   {
@@ -337,7 +337,7 @@
       "Water resistance up to 50m",
       "15 days battery life"
     ],
-    "availability": "In Stock",
+    "availability": true,
     "rating": 4
   }
 ]
