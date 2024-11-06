@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import { useNavigate } from "react-router-dom";
 
 const Signup = () => {
@@ -9,6 +9,10 @@ const Signup = () => {
 
     navigate("/");
   };
+
+  useEffect(() => {
+    document.title = "Signup | Gadget Heaven";
+  }, []);
 
   return (
     <div className="flex items-center justify-center h-[500px] bg-gray-100">

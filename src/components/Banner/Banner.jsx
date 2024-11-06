@@ -14,7 +14,7 @@ const Banner = () => {
             next level. From smart devices to the coolest accessories, we have
             it all!
           </p>
-          <Link to="/dashboard" className="btn btn-primary">
+          <Link to="/dashboard/cart" className="btn btn-primary">
             Shop Now
           </Link>
         </div>

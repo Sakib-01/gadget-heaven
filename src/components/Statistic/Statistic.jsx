@@ -1,8 +1,11 @@
-import React from "react";
+import React, { useEffect } from "react";
 import Headline from "../Headline";
 import { Outlet } from "react-router-dom";
 
 const Statistic = () => {
+  useEffect(() => {
+    document.title = "Statistic | Gadget Heaven";
+  }, []);
   return (
     <div>
       <Headline
