@@ -8,13 +8,13 @@ const Products = () => {
   const [selectedCategory, setSelectedCategory] = useState("all products");
 
   useEffect(() => {
-    fetch("/public/categories.json")
+    fetch("/categories.json")
       .then((res) => res.json())
       .then((data) => setCategories(data));
   }, []);
 
   useEffect(() => {
-    fetch("/public/products.json")
+    fetch("/products.json")
       .then((res) => res.json())
       .then((data) => setProducts(data));
   }, []);

@@ -13,6 +13,10 @@ import Dashboard from "./components/Dashboard/Dashboard.jsx";
 import Cart from "./components/Cart/Cart.jsx";
 import Wish from "./components/Wish/Wish.jsx";
 import ErrorPage from "./components/ErrorPage/ErrorPage.jsx";
+import Signup from "./components/Signup/Signup.jsx";
+import NewRoute from "./components/NewRoute/NewRoute.jsx";
+import Statistic from "./components/Statistic/Statistic.jsx";
+import Chart from "./components/Rechart/Chart.jsx";
 
 const router = createBrowserRouter([
   {
@@ -56,6 +60,27 @@ const router = createBrowserRouter([
           {
             path: "/dashboard/wish",
             element: <Wish></Wish>,
+          },
+        ],
+      },
+      {
+        path: "/statistic",
+        element: <Statistic></Statistic>,
+        children: [
+          {
+            path: "/statistic",
+            element: <Chart></Chart>,
+            loader: () => fetch("/products.json"),
+          },
+        ],
+      },
+      {
+        path: "/signup",
+        element: <NewRoute></NewRoute>,
+        children: [
+          {
+            path: "/signup",
+            element: <Signup></Signup>,
           },
         ],
       },

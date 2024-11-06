@@ -19,6 +19,12 @@ const Card = ({ card }) => {
             >
               View Details
             </NavLink>
+            <NavLink
+              to="/signup"
+              className="btn btn-outline rounded-full btn-info ml-5"
+            >
+              Buy Now
+            </NavLink>
           </div>
         </div>
       </div>
